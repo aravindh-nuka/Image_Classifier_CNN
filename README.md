@@ -3,8 +3,11 @@
 ## 🎓 Internship Details
 
 **Internship Provider:** CodeTech IT Solutions
+
 **Intern ID:** CITS1618
+
 **Full Name:** Nuka Aravindh
+
 **Duration:** 4 Weeks
 
 ## 📌 Project Overview
