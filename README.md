@@ -1,23 +1,20 @@
-# 🐱🐶 Cat vs Dog Image Classifier using CNN
+# 🐱 Cat vs Dog Image Classifier using CNN
 
 ## 📌 Project Overview
 
-This project is a Deep Learning based Image Classification system that predicts whether an uploaded image is a Cat or a Dog using a Convolutional Neural Network (CNN).
+This project is a Deep Learning-based Image Classification system that predicts whether an uploaded image is a Cat or a Dog. The model is built using Convolutional Neural Networks (CNN) with TensorFlow and Keras and deployed using Streamlit and Render.
 
-The model was trained on the Microsoft Cats vs Dogs dataset and deployed using Streamlit for an interactive web interface.
+## 🚀 Live Demo
 
----
+https://image-classifier-cnn-1.onrender.com
 
-## 🎯 Objectives
+## ✨ Features
 
-* Learn Computer Vision fundamentals
-* Understand Convolutional Neural Networks (CNNs)
-* Perform Image Preprocessing
-* Train and Evaluate a Deep Learning Model
-* Build a Streamlit Web Application
-* Deploy the project for real-world usage
-
----
+* Upload JPG, JPEG, and PNG images
+* Real-time Cat vs Dog prediction
+* Prediction confidence score
+* Interactive Streamlit web application
+* Deep Learning model built using CNN
 
 ## 🛠️ Technologies Used
 
@@ -25,153 +22,78 @@ The model was trained on the Microsoft Cats vs Dogs dataset and deployed using S
 * TensorFlow
 * Keras
 * NumPy
-* Matplotlib
 * Pillow
 * Streamlit
+* Git & GitHub
+* Render
 
----
+## 🧠 Model Architecture
 
-## 📂 Project Structure
+* Convolution Layer
+* Max Pooling Layer
+* Convolution Layer
+* Max Pooling Layer
+* Flatten Layer
+* Dense Layer
+* Output Layer (Sigmoid)
 
-```text
+## 📊 Performance
+
+* Validation Accuracy: 86.31%
+* Validation Loss: 0.4953
+
+## 📂 Dataset
+
+Dataset: Microsoft Cats vs Dogs Dataset
+
+Source:
+https://www.microsoft.com/en-us/download/details.aspx?id=54765
+
+## 📁 Project Structure
+
 Image_Classifier_CNN/
 
-│
-├── Data/
-│   └── PetImages/
-│
+├── models/
+
+│ └── cat_dog_classifier.keras
+
 ├── Notebook/
-│   └── cat_dog_classifier.ipynb
-│
-├── Models/
-│   └── cat_dog_classifier.keras
-│
+
+│ └── cat_dog_classifier.ipynb
+
 ├── Screenshots/
-│
+
 ├── app.py
+
 ├── requirements.txt
+
+├── runtime.txt
+
+├── .python-version
+
 └── README.md
-```
 
----
+## ⚙️ Installation
 
-## 📊 Dataset
+Clone Repository
 
-Dataset Used:
+git clone https://github.com/aravindh-nuka/Image_Classifier_CNN.git
 
-Microsoft Cats vs Dogs Dataset
+Install Dependencies
 
-Contents:
+pip install -r requirements.txt
 
-* Cat Images: 12,499
-* Dog Images: 12,499
-* Total Images: 24,998
+Run Application
 
-Corrupted images were identified and removed before training.
-
----
-
-## 🔄 Data Preprocessing
-
-The following preprocessing steps were performed:
-
-* Image Resizing (128 × 128)
-* Pixel Normalization (0–255 → 0–1)
-* Train/Validation Split (80:20)
-* Batch Processing using ImageDataGenerator
-
----
-
-## 🧠 CNN Architecture
-
-The model consists of:
-
-1. Conv2D Layer (32 Filters)
-2. MaxPooling Layer
-3. Conv2D Layer (64 Filters)
-4. MaxPooling Layer
-5. Conv2D Layer (128 Filters)
-6. MaxPooling Layer
-7. Flatten Layer
-8. Dense Layer (128 Neurons)
-9. Dropout Layer
-10. Output Layer (Sigmoid)
-
----
-
-## ⚙️ Model Training
-
-Loss Function:
-
-```python
-Binary Crossentropy
-```
-
-Optimizer:
-
-```python
-Adam
-```
-
-Metric:
-
-```python
-Accuracy
-```
-
----
-
-## 📈 Results
-
-### Validation Performance
-
-* Validation Accuracy: **86.31%**
-* Validation Loss: **0.4953**
-
-The model successfully classifies cat and dog images with strong performance on unseen validation data.
-
----
-
-## 🚀 Streamlit Application
-
-Features:
-
-* Upload Image
-* Image Preview
-* Cat/Dog Prediction
-* Confidence Score Display
-
-Run locally:
-
-```bash
 streamlit run app.py
-```
 
----
-## 📚 Learning Outcomes
+## 🎯 Future Improvements
 
-Through this project, I learned:
-
-* Deep Learning Fundamentals
-* Convolutional Neural Networks
-* Image Preprocessing
-* Model Training and Evaluation
-* TensorFlow and Keras
-* Streamlit Deployment
-* GitHub Project Management
-
----
-
-## 🔮 Future Improvements
-
+* Transfer Learning using VGG16 and ResNet50
 * Multi-Class Animal Classification
-* Transfer Learning using MobileNetV2
-* Data Augmentation
-* Model Deployment on Cloud
-* Real-Time Webcam Classification
-
----
+* Webcam Prediction
+* Mobile Deployment
 
 ## 👨‍💻 Author
 
-Nuka Aravindh
+Aravindh Nuka
