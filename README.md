@@ -1,5 +1,12 @@
 # 🐱 Cat vs Dog Image Classifier using CNN
 
+## 🎓 Internship Details
+
+**Internship Provider:** CodeTech IT Solutions
+**Intern ID:** CITS1618
+**Full Name:** Nuka Aravindh
+**Duration:** 4 Weeks
+
 ## 📌 Project Overview
 
 This project is a Deep Learning-based Image Classification system that predicts whether an uploaded image is a Cat or a Dog. The model is built using Convolutional Neural Networks (CNN) with TensorFlow and Keras and deployed using Streamlit and Render.
